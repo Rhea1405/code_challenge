@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BillValidator.cs" />
+    <Compile Remove="DBHandler.cs" />
+    <Compile Remove="ElectricityBill.cs" />
+    <Compile Remove="ElectricityBoard.cs" />
+    <Compile Remove="ict-1\DBHandler.cs" />
+    <Compile Remove="ict-1\DistanceValidator.cs" />
+    <Compile Remove="ict-1\mainclass.cs" />
+    <Compile Remove="ict-1\TicketBooking.cs" />
+    <Compile Remove="ict-1\TicketDetail.cs" />
+    <Compile Remove="mainclass.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ict-1\" />
+  </ItemGroup>
+
+</Project>
